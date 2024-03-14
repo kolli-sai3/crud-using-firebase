@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>firebase Task 1</title>
+  </head>
+  <body>
+    <div
+      style="display: flex; justify-content: space-between; align-items: center"
+    >
+      <button id="openAddProductModalBtn">Add New Product</button>
+      <a href="http://127.0.0.1:5500/index2.html">Another Task</a>
+    </div>
+
+    <!-- Add Product Modal -->
+    <div id="addProductModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeAddProductModalBtn">&times;</span>
+        <h2>Add New Product</h2>
+        <form id="addProductForm">
+          <label for="addProductName">Name:</label>
+          <input
+            type="text"
+            id="addProductName"
+            name="addProductName"
+            required
+          />
+
+          <label for="addProductDescription">Description:</label>
+          <input
+            type="text"
+            id="addProductDescription"
+            name="addProductDescription"
+            required
+          />
+
+          <label for="addProductPrice">Price:</label>
+          <input
+            type="text"
+            id="addProductPrice"
+            name="addProductPrice"
+            required
+          />
+
+          <label for="addProductImage">Image URL:</label>
+          <input
+            type="text"
+            id="addProductImage"
+            name="addProductImage"
+            required
+          />
+
+          <div class="button-container">
+            <button type="button" id="submitAddProductBtn">Submit</button>
+            <button type="button" id="cancelAddProductBtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Update Product Modal -->
+    <div id="updateProductModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeUpdateProductModalBtn">&times;</span>
+        <h2>Update Product</h2>
+        <form id="updateProductForm">
+          <label for="updateProductName">Name:</label>
+          <input
+            type="text"
+            id="updateProductName"
+            name="updateProductName"
+            required
+          />
+
+          <label for="updateProductDescription">Description:</label>
+          <input
+            type="text"
+            id="updateProductDescription"
+            name="updateProductDescription"
+            required
+          />
+
+          <label for="updateProductPrice">Price:</label>
+          <input
+            type="text"
+            id="updateProductPrice"
+            name="updateProductPrice"
+            required
+          />
+
+          <label for="updateProductImage">Image URL:</label>
+          <input
+            type="text"
+            id="updateProductImage"
+            name="updateProductImage"
+            required
+          />
+
+          <div class="button-container">
+            <button type="button" id="submitUpdateProductBtn">Update</button>
+            <button type="button" id="cancelUpdateProductBtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Updated Products Table -->
+    <table id="productsTable">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Image</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="productsTableBody">
+        <!-- Product rows will be added here dynamically -->
+      </tbody>
+    </table>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

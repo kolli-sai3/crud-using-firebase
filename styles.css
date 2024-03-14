@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  margin: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form Styling */
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Table Styling */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Add this style to your existing CSS */
+
+/* Updated Modal (background) */
+#updateProductModal {
+  display: none;
+}
+
+/* Updated Modal Content */
+#updateProductModal .modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
